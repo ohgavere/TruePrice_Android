@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/run_liste_land_wrapper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chalkboard_background"
+    tools:context="com.dmb.trueprice.RunListe$PlaceholderFragment">
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="50dp"
+    	android:minHeight="25dp"
+    	android:orientation="horizontal"
+    	android:weightSum="99" >
+
+    	<Button
+    		style="@style/btt_test"
+    		android:id="@+id/btn_run_liste_start"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_weight="33"
+    		android:text="Lancer"
+    		android:textColor="@color/black"
+    		android:textColorHint="@color/black"
+    		android:textSize="15sp" />
+
+    	<Button
+    		style="@style/btt_test"
+    		android:id="@+id/btn_run_liste_review"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_weight="33"
+    		android:text="Revoir"
+    		android:textColor="@color/black"
+    		android:textColorHint="@color/black"
+    		android:textSize="15sp" />
+
+    	<Button
+    		style="@style/btt_test"
+    		android:id="@+id/btn_run_liste_sync"
+    		android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_weight="33"
+    		android:text="Synchro"
+    		android:textColor="@color/black"
+    		android:textColorHint="@color/black"
+    		android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginBottom="15dp"
+    	android:baselineAligned="false"
+    	android:orientation="horizontal" >
+
+        <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:orientation="vertical" >
+
+        	<TextView
+        		android:id="@+id/run_label_start_continue"
+        		android:layout_width="match_parent"
+        		android:layout_height="25dp"
+        		android:gravity="center_horizontal|center_vertical"
+        		android:text="Demarrer ou continuer"
+    		android:textColor="@color/white"
+    		android:textColorHint="@color/white" />
+
+
+        	<ListView
+        		android:id="@+id/run_listview_start_continue"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:background="@android:color/transparent"
+    		android:textColor="@color/black"
+    		android:textColorHint="@color/black" >
+        	</ListView>
+        	
+        </LinearLayout>
+
+        <LinearLayout
+        	android:layout_width="wrap_content"
+        	android:layout_height="match_parent"
+        	android:layout_weight="1"
+        	android:orientation="vertical" >
+
+            <TextView
+            	android:id="@+id/run_label_review"
+            	android:layout_width="match_parent"
+            	android:layout_height="25dp"
+            	android:gravity="center_horizontal|center_vertical"
+            	android:text="Listes clôturées"
+    		android:textColor="@color/white"
+    		android:textColorHint="@color/white" />
+
+
+            <ListView
+            	android:id="@+id/run_listview_review"
+            	android:layout_width="match_parent"
+            	android:layout_height="match_parent"
+            	android:background="@android:color/transparent"
+            	android:longClickable="false"
+    		android:textColor="@color/black"
+    		android:textColorHint="@color/black" >
+            </ListView>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

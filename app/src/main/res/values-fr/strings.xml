@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+		<string name="operator_or"> ou </string>
+	
+	
+	<string name="action_settings" >Options</string>
+	<string name="action_about">A propos</string>
+
+    <string name="one_more_time">Appuyez encore une fois pour continuer</string>
+
+    <string name="email_to_clipboard">L\'email a été envoyée au presse-papiers</string>
+
+    <string name="launcher_login_status_on">Connecté</string>
+    <string name="launcher_login_status_off">Déconnecté</string>
+
+
+    <!--
+    <string name=""></string>
+    -->
+
+</resources>

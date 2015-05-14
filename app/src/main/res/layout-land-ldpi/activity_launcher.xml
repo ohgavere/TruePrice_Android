@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center_horizontal|center_vertical"
+	android:background="@drawable/futuristic_grid"
+    tools:context="${relativePackage}.${activityClass}"
+    android:orientation="vertical">
+
+	<!-- style="@style/AppTheme" -->
+	<!-- android:background="@drawable/texture_black_background" -->
+	<!-- android:layout_gravity="bottom" -->
+	<!-- android:layout_marginTop="6dp" -->
+	<!-- android:paddingBottom="@dimen/activity_vertical_margin" -->
+	<!-- android:paddingLeft="@dimen/activity_horizontal_margin" -->
+	<!-- android:paddingRight="@dimen/activity_horizontal_margin" -->
+	<!-- android:paddingTop="@dimen/activity_vertical_margin" -->
+
+
+	<!-- android:background="@android:color/background_dark" -->	<!-- style="@style/_AppTheme" -->
+
+	<LinearLayout
+		android:id="@+id/launcher_layout_firstrow_wrapper"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp" >
+
+		<ImageView
+			android:layout_width="175dp"
+			android:layout_height="75dp"
+			android:background="@android:color/transparent"
+			android:contentDescription="logo"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_launcher"
+			tools:ignore="HardcodedText" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_margin="0dp"
+			android:layout_weight="0"
+			android:background="@android:color/transparent"
+			android:gravity="center_vertical|center_horizontal"
+			android:orientation="horizontal" >
+
+			<Spinner
+				android:id="@+id/launcher_user_id_spinner"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:entries="@array/array_sync_target"
+				android:gravity="center_vertical|center_horizontal"
+				android:textColor="@android:color/white"
+                android:background="#ff1395ff"
+                android:layout_marginRight="48dp" />
+		</LinearLayout>
+
+	</LinearLayout>
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="39dp"
+		android:layout_marginTop="8dp"
+		android:background="@android:color/transparent"
+		android:gravity="center_horizontal"
+		android:text="@string/abc_activitychooserview_choose_application"
+		android:textColor="@color/lightblue"
+		android:textColorHint="@color/lightblue"
+		android:textSize="26sp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="5dp"
+		android:background="@android:color/transparent"
+		android:gravity="center_horizontal|center_vertical"
+		android:orientation="horizontal" >
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+			android:gravity="center_vertical|center_horizontal"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/launcher_btt_login"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_login" />
+
+			<Button
+				android:id="@+id/launcher_btt_sync"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_sync" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal" >
+
+			<Button
+				android:id="@+id/launcher_btt_run"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_run_list" />
+
+			<Button
+				android:id="@+id/launcher_btt_calc"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_calculate" />
+		</LinearLayout>
+	</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/connect_light_grey"
+            android:background="@android:color/transparent"
+            android:layout_margin="8dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/launcher_txt_login_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/launcher_login_status_off"
+            android:textSize="26sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/launcher_logon_status_off"
+            android:gravity="center_vertical|start|center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

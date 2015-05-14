@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="center_horizontal|center_vertical"
+	android:background="@drawable/futuristic_grid"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+	<!-- style="@style/AppTheme" -->
+	<!-- android:background="@drawable/texture_black_background" -->
+	<!-- android:layout_gravity="bottom" -->
+	<!-- android:layout_marginTop="6dp" -->
+	<!-- android:paddingBottom="@dimen/activity_vertical_margin" -->
+	<!-- android:paddingLeft="@dimen/activity_horizontal_margin" -->
+	<!-- android:paddingRight="@dimen/activity_horizontal_margin" -->
+	<!-- android:paddingTop="@dimen/activity_vertical_margin" -->
+
+
+	<!-- android:background="@android:color/background_dark" -->	<!-- style="@style/_AppTheme" -->
+
+	<LinearLayout
+		android:id="@+id/launcher_layout_firstrow_wrapper"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:contentDescription="logo"
+			android:scaleType="fitCenter"
+			android:src="@drawable/ic_launcher"
+			tools:ignore="HardcodedText"
+            android:layout_margin="8dp" />
+
+        <Spinner
+            android:id="@+id/launcher_user_id_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:entries="@array/array_sync_target"
+            android:gravity="center_vertical|start"
+            android:textColor="@android:color/white"
+            android:background="#ff1395ff"
+            android:layout_margin="6dp"
+            android:padding="2dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="top|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:text="@string/abc_activitychooserview_choose_application"
+            android:textColor="@color/lightblue"
+            android:textColorHint="@color/lightblue"
+            android:textSize="26sp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/img_launcher_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/connect_light_grey"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <TextView
+            android:id="@+id/launcher_txt_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/launcher_login_status_off"
+            android:textSize="26sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/launcher_logon_status_off"
+            android:gravity="center_vertical|start"
+            android:layout_marginRight="35dp" />
+    </LinearLayout>
+
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+		android:gravity="bottom|center_horizontal"
+		android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+			android:gravity="center_vertical|center_horizontal"
+			android:orientation="horizontal"
+            android:layout_weight="1">
+
+			<Button
+				android:id="@+id/launcher_btt_login"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_login" />
+
+			<Button
+				android:id="@+id/launcher_btt_sync"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_sync" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal"
+            android:layout_weight="1">
+
+			<Button
+				android:id="@+id/launcher_btt_run"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_run_list" />
+
+			<Button
+				android:id="@+id/launcher_btt_calc"
+				style="@style/btt_test"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:background="@drawable/blue_light_button"
+				android:text="@string/button_label_calculate" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

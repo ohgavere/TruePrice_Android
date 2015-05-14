@@ -1,0 +1,201 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.dmb.trueprice"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="20" />
+
+	<!-- Permission to get Internet access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+
+        <activity
+            android:name="org.dmb.trueprice.Login"            
+            android:label="@string/title_activity_login" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.Launcher" 
+            />
+		</activity>        
+        
+        <activity
+            android:name="org.dmb.trueprice.ChooseCatgActivity"            
+            android:label="@string/title_activity_login"			
+            >
+<!--             android:parentActivityName="org.dmb.trueprice.activities.Launcher" -->
+<!--             android:windowSoftInputMode="adjustResize|stateVisible"              -->
+            <!-- 
+            /**	Not true, this activity only handles Menu	**/
+            -->
+            
+			            
+            
+            <!-- 
+            /**	Not true, this activity only handles Menu	**/
+            -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.RunListeStart" 
+            />
+	        
+		</activity>            
+    
+ <!--	MENU HANDLER	
+        org.dmb.trueprice.android.activities
+        -->
+        
+        <activity
+            android:name="org.dmb.trueprice.MenuHandler"
+            android:label="@string/title_activity_menu_handler" >
+        </activity>        
+        
+        <!--	MENU HANDLER ActionBarActivity COMPAT ADAPTER	
+        org.dmb.trueprice.android.activities
+        -->
+        
+        <activity
+            android:name="org.dmb.trueprice.MenuHandlerActionBarCompatAdapter"
+            android:label="@string/title_activity_menu_handler" >
+        </activity>        
+                
+        
+        
+		<!--	RunListe
+		org.dmb.trueprice.android.activities
+			-->
+
+        <activity
+        	android:name="org.dmb.trueprice.RunListe"
+        	android:label="@string/app_name"
+        
+        
+         >
+<!--         	android:parentActivityName="org.dmb.trueprice.activities.Launcher" -->
+        
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.Launcher" 
+            />
+           	        
+        </activity>
+        
+        
+        <!--	LAUNCHER
+        org.dmb.trueprice.android.activities
+        	-->
+        
+        
+        <activity
+            android:name="org.dmb.trueprice.Launcher"
+            android:label="@string/app_name" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+        	android:name="org.dmb.trueprice.RunListeStart"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunListe"  />
+           	        
+        </activity>
+        
+        <activity
+        	android:name="org.dmb.trueprice.RunListeStop"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunListe"  />
+           	        
+        </activity>        
+        <activity
+        	android:name="org.dmb.trueprice.RunPdtInit"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunStart"  />
+           	        
+        </activity>        
+		
+        <activity
+        	android:name="org.dmb.trueprice.RunPdtExpect"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunPdtInit"  />
+           	        
+        </activity>
+
+
+        <activity
+        	android:name="org.dmb.trueprice.RunPdtFinal"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunPdtExpect"  />
+           	        
+        </activity>          
+        
+        <activity
+        	android:name="org.dmb.trueprice.RunPdtCalc"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunPdtExpect"  />
+           	        
+        </activity>     
+        
+        <activity
+        	android:name="org.dmb.trueprice.RunStop"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunStart"  />
+           	        
+        </activity>        
+
+        
+        <activity
+        	android:name="org.dmb.trueprice.RunProduit"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.RunStart"  />
+           	        
+        </activity>                
+        
+        
+        <activity
+        	android:name="org.dmb.trueprice.Sync"
+        	android:label="@string/app_name" >
+            
+           	<meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="org.dmb.trueprice.activities.Launcher"  />
+           	        
+        </activity>        
+                
+    </application>        
+
+</manifest>

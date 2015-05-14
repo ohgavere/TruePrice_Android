@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_gravity="bottom"
+	android:background="@drawable/chalkboard_background"
+	android:orientation="vertical" 
+	android:id="@+id/sync_main_layout">
+
+	<!-- style="@style/AppTheme" -->
+	<!-- tools:context="${relativePackage}.${activityClass}" -->
+
+	<LinearLayout
+		android:id="@+id/LinearLayout1"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp" >
+
+		<Spinner
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:entries="@array/array_sync_target"
+			android:gravity="center_horizontal" />
+
+		<Button
+			android:id="@+id/btn_sync_synchronize"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:text="Sync" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/sync_icon_task"
+		android:layout_width="fill_parent"
+		android:layout_height="50dp" >
+		
+		<Button
+			android:id="@+id/btn_sync_icons"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:text="Synchroniser les icones manquants" />		
+		
+	</LinearLayout>	
+	
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="bottom"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:weightSum="1.5" >
+
+			<Button
+				android:id="@+id/btn_sync_downlist"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="0.5"
+				android:text="Down" />
+
+			<Button
+				android:id="@+id/btn_sync_uplist"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="0.5"
+				android:text="Up" />
+
+			<Button
+				android:id="@+id/btn_sync_proceed"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="0.5"
+				android:text="Start" 
+				android:enabled="false"/>
+		</LinearLayout>
+
+		<RelativeLayout
+			android:id="@+id/sync_list_wrapper"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginBottom="20dp" >
+
+			<ListView
+				android:id="@+id/list"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				/>
+		</RelativeLayout>
+	</LinearLayout>
+
+</LinearLayout>

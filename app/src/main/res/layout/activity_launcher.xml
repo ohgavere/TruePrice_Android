@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" 
+	android:background="@drawable/futuristic_grid" >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_launcher"
+            tools:ignore="HardcodedText"
+            android:background="@android:color/transparent"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/abc_activitychooserview_choose_application"
+            android:textSize="26sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/lightblue"
+            android:textColorHint="@color/lightblue"
+            android:gravity="center_vertical|start" />
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/img_launcher_login_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/connect_light_grey"
+            android:background="@android:color/transparent"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/launcher_txt_login_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/launcher_login_status_off"
+            android:textSize="26sp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/launcher_logon_status_off"
+            android:gravity="center_vertical|start" />
+    </LinearLayout>
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginTop="15dp"
+        android:orientation="vertical"
+   	    android:background="@android:color/transparent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical">
+
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="0dp"
+		    android:gravity="center_vertical|center_horizontal"
+		    android:orientation="horizontal"
+		   	android:background="@android:color/transparent"
+            android:weightSum="4">
+
+		    <Button
+		        android:id="@+id/launcher_btt_login"
+		        style="@style/btt_test"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/blue_light_button"
+		        android:text="@string/button_label_login"
+                android:layout_weight="1" />
+
+		    <Button
+		        android:id="@+id/launcher_btt_sync"
+		        style="@style/btt_test"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:background="@drawable/blue_light_button"
+		        android:text="@string/button_label_sync"
+                android:layout_weight="1" />
+		</LinearLayout>
+
+
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_horizontal|center_vertical"
+		    android:orientation="horizontal"
+		    android:background="@android:color/transparent"
+            android:weightSum="4">
+
+		    <Button
+		        android:id="@+id/launcher_btt_run"
+		        style="@style/btt_test"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/blue_light_button"
+		        android:text="@string/button_label_run_list"
+                android:layout_weight="1" />
+
+		    <Button
+		        android:id="@+id/launcher_btt_calc"
+		        style="@style/btt_test"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:background="@drawable/blue_light_button"
+		        android:text="@string/button_label_calculate"
+                android:layout_weight="1" />
+		</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+               android:background="@android:color/transparent"
+android:weightSum="4"
+            android:layout_gravity="center_horizontal">
+
+            <Spinner
+                android:id="@+id/launcher_user_id_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:gravity="center_vertical|start"
+                android:clickable="true"
+                android:background="#ff1395ff"
+                style="@style/btt_test"
+                android:layout_weight="1"
+                android:clipChildren="false"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:scrollbarAlwaysDrawVerticalTrack="true"
+                android:spinnerMode="dialog"
+                />
+            <!--android:entries="@array/array_sync_target"-->
+        </LinearLayout>
+
+    </LinearLayout>
+		
+</LinearLayout>

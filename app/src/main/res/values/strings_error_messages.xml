@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="error_function_not_enabled">Sorry, this function is still in work. Please come back later.</string>
+    
+	<string name="error_launcher_not_signed_in">Sorry, you must Sign In before</string>
+	<string name="error_launcher_no_internet">Internet not accessible</string>	
+	
+	<string name="error_connector_network_unreachable">Could not reach the Internet or the server. Please check your connection and retry.</string>	
+	<string name="error_connector_timeout">Could reach the Internet but the request timed out. Please retry.</string>	
+<!-- 	<string name="error_connector_timeout">Could reach the Internet but the request timed out. Please retry.</string> -->
+    
+</resources>

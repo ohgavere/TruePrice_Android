@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.dmb.trueprice.android" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="1"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+  
+    
+    
+    <item android:id="@+id/action_link_webapp"
+        android:title="@string/link_webapp"
+        android:titleCondensed="@string/link_label_webapp"
+        app:showAsAction="never"
+        android:orderInCategory="2"
+          />
+    
+<!--     to handle click to launch brower see here :
+http://stackoverflow.com/questions/2201917/how-can-i-open-a-url-in-androids-web-browser-from-my-application
+  -->
+  
+  
+  
+  
+  
+  
+  
+	<item android:id="@+id/btn_sync_synchronize"
+	    android:title="@string/action_about"
+	    android:orderInCategory="100"
+	    app:showAsAction="never"
+	    />
+
+</menu>

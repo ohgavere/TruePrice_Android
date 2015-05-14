@@ -1,0 +1,37 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        debugKey1 {
+            keyAlias 'key-debug-1'
+            keyPassword 'debug1'
+            storeFile file('H:/TFE/keystore/android/keystore-file')
+            storePassword 'NTherchies7050012'
+        }
+    }
+    compileSdkVersion 19
+    buildToolsVersion "21.1.2"
+    defaultConfig {
+        applicationId "org.dmb.trueprice"
+        minSdkVersion 10
+        targetSdkVersion 20
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile 'com.android.support:appcompat-v7:19.1.0'
+    compile 'com.android.support:support-v4:19.1.0'
+    compile 'com.google.code.gson:gson:2.3'
+    compile 'joda-time:joda-time:2.1'
+    compile files('libs/jconvert-1.1.0.jar')
+}

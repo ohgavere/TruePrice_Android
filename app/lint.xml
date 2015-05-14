@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="Instantiatable" severity="ignore" />
+    <issue id="MissingRegistered">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
+    <issue id="MissingTranslation" severity="ignore">
+        <ignore path="res/values/strings.xml" />
+        <ignore path="res/values/strings_activity_login.xml" />
+        <ignore path="res/values/strings_error_messages.xml" />
+    </issue>
+    <issue id="NewApi">
+        <ignore path="src/org/dmb/trueprice/Login.java" />
+    </issue>
+</lint>

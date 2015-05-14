@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<dimen name="text_size_error_message">25sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="dim_textsize_global">20sp</dimen>
+    <dimen name="dim_textsize_global_bigger">24sp</dimen>
+    <dimen name="dim_textsize_global_smaller">18sp</dimen>
+
+    <dimen name="dim_imgsize_price_calculator">45dp</dimen>
+
+</resources>

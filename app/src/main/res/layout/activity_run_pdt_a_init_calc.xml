@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="0dp"
+	android:background="@drawable/wood_panel"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+<!--     	android:layout_weight="3"     	 -->
+    
+    <ScrollView
+    	android:id="@+id/scrollView1"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_gravity="top"
+    	android:layout_weight="1"
+    	android:background="@android:color/transparent" >
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	
+<!-- <LinearLayout -->
+<!-- 	android:layout_width="fill_parent" -->
+<!-- 	android:layout_height="90dp" -->
+<!-- 	android:background="@android:color/transparent" > -->
+
+<!-- <Gallery -->
+<!-- 	android:id="@id/gallery_pdt" -->
+<!-- 	android:layout_width="fill_parent" -->
+<!-- 	android:layout_height="fill_parent" -->
+<!-- 	android:layout_margin="8dp" -->
+<!-- 	android:animationDuration="350" -->
+<!-- 	android:background="@android:color/transparent" -->
+<!-- 	android:padding="8dp" -->
+<!-- 	android:scrollbarAlwaysDrawVerticalTrack="false" -->
+<!-- 	android:scrollbarStyle="insideOverlay" -->
+<!-- 	android:scrollbars="horizontal" -->
+<!-- 	android:spacing="16dp" -->
+<!-- 	android:unselectedAlpha="0.55" /> -->
+
+<!-- </LinearLayout> -->
+
+<!-- <LinearLayout -->
+<!-- 	android:layout_width="match_parent" -->
+<!-- 	android:layout_height="90dp" -->
+<!-- 	android:orientation="horizontal" > -->
+
+<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+<TextView
+	android:layout_width="match_parent"
+	android:layout_height="25dp"
+	android:text="€  /  kg"
+	android:textColor="@color/darkgray"
+	android:textSize="18dp"
+	android:textStyle="bold"
+	android:typeface="monospace" />
+
+<TextView
+	android:layout_width="101dp"
+	android:layout_height="62dp"
+	android:text="5.36"
+	android:textSize="25dp"
+	android:textColor="@color/black" />
+</LinearLayout>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:orientation="vertical" >
+
+<TextView
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:text="4.86"
+	android:textColor="@color/black" />
+
+<TextView
+	android:layout_width="match_parent"
+	android:layout_height="fill_parent"
+	android:text="7.25"
+	android:textColor="@color/black" />
+
+</LinearLayout>
+
+<LinearLayout
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="right"
+	android:gravity="right"
+	android:orientation="horizontal" >
+
+<Button
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Finish" />
+
+<Button
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:text="Home" />
+
+<!-- </LinearLayout> -->
+</LinearLayout>
+
+<LinearLayout
+	android:layout_width="168dp"
+	android:layout_height="44dp" >
+
+	<Spinner
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_weight="1" />
+</LinearLayout>
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="207dp"
+	android:orientation="vertical"
+	android:background="@color/white">
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="43dp"
+	android:orientation="vertical">
+<CheckBox
+	android:layout_width="144dp"
+	android:layout_height="fill_parent"
+	android:text="Reduction"
+	android:textSize="22sp"
+	android:textColor="@color/black" />
+<Button
+	android:layout_width="49dp"
+	android:layout_height="wrap_content"
+	android:text="&gt;&gt;"
+	android:textSize="22sp" />
+</LinearLayout>
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="54dp">
+<TextView
+	android:layout_width="160dp"
+	android:layout_height="fill_parent"
+	android:padding="12dp"
+	android:text="5.36"
+	android:textSize="24sp"
+	android:textColor="@color/darkgray" />
+<TextView
+	android:layout_width="160dp"
+	android:layout_height="fill_parent"
+	android:padding="12dp"
+	android:layout_marginTop="10dp"
+	android:text="6.25"
+	android:textSize="24sp"
+	android:textColor="@color/darkgray" />
+</LinearLayout>
+
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="99dp"
+	android:orientation="vertical">
+
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<TextView
+			android:layout_width="60dp"
+			android:layout_height="33dp"
+			android:text="Poids  /u"
+			android:textColor="@color/darkgray" />
+		
+		<EditText
+			android:layout_width="100dp"
+			android:layout_height="33dp"
+			android:text="200"
+			android:textSize="18sp" />
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Prix     /u"
+			android:textColor="@color/darkgray" />
+		
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="33dp"
+			android:text="1.58"
+			android:textSize="18sp" />
+	</TableRow>
+	
+	<TableRow
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+		
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="33dp"
+		android:text="Prix  /Kg"
+		android:textColor="@color/darkgray" />
+	
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="33dp"
+		android:text="5.36"
+		android:textSize="20sp"
+		android:textColor="@color/gray" />
+	
+	</TableRow>
+	
+</TableLayout>
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
+
+</LinearLayout>

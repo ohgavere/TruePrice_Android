@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <dimen name="dim_textsize_global">36sp</dimen>
+    <dimen name="dim_textsize_global_bigger">40sp</dimen>
+    <dimen name="dim_textsize_global_smaller">32sp</dimen>
+
+    <dimen name="dim_imgsize_price_calculator">65dp</dimen>
+
+</resources>

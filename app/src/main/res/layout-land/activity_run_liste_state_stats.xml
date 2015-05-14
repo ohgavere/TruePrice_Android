@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/wood_panel"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+	<!-- android:layout_weight="3" -->
+
+	<ScrollView
+		android:id="@+id/scrollView1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="top"
+		android:layout_weight="1.5" >
+
+		<LinearLayout
+			android:id="@+id/ListeStateMainContainer"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="32dp"
+					android:background="@drawable/metal_brosse_lightgray" >
+
+					<TextView
+						style="@style/txt_label_stat"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Stats de départ"
+						android:textColor="#000000" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:weightSum="1.0" >
+
+					<TextView
+						android:id="@+id/run_liste_start_liste_label"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.9"
+						android:gravity="center_horizontal"
+						android:text="Ma liste de colruyt"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						android:id="@+id/run_liste_start_liste_progress"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_weight="0.1"
+						android:gravity="center_horizontal"
+						android:text=" 25 % "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:padding="5dp" >
+
+					<TextView
+						android:id="@+id/TextView22"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="Reste"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						android:id="@+id/run_liste_start_count_remaining"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="center_horizontal|center_vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal"
+						android:text="9"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="right|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="produits"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:weightSum="7" >
+
+					<TextView
+						android:id="@+id/TextView19"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="Fini    "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						android:id="@+id/run_liste_start_count_stop"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="center_horizontal|center_vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal"
+						android:text=" 3 "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="right|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="produits"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:weightSum="7" >
+
+					<TextView
+						android:id="@+id/TextView18"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="Prevu"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						android:id="@+id/run_liste_start_count_expected"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="center_horizontal|center_vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal"
+						android:text=" 1 "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="right|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="produits"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:weightSum="7" >
+
+					<TextView
+						android:id="@+id/TextView15"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="Calc. "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						android:id="@+id/run_liste_start_count_calc"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="center_horizontal|center_vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal"
+						android:text=" 2 "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="right|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="produits"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:padding="5dp"
+					android:weightSum="7" >
+
+					<TextView
+						android:id="@+id/TextView12"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="Init.   "
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						android:id="@+id/run_liste_start_count_inital"
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="center_horizontal|center_vertical"
+						android:layout_weight="1"
+						android:gravity="center_horizontal"
+						android:text="6"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:layout_gravity="right|center_vertical"
+						android:layout_weight="3"
+						android:gravity="center_horizontal"
+						android:text="produits"
+						android:textAppearance="?android:attr/textAppearanceLarge" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical" >
+
+				<!-- android:id="@+id/widget372_copy" -->
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="32dp"
+					android:background="@drawable/metal_brosse_lightgray" >
+
+					<TextView
+						style="@style/txt_label_stat"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Stats finales"
+						android:textColor="#000000" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:orientation="horizontal" >
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="1"
+						android:text="Nb produits"
+						android:textSize="26sp" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="1"
+						android:text="18"
+						android:textSize="26sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp"
+					android:orientation="horizontal" >
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="1"
+						android:text="Total TTC"
+						android:textSize="26sp" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="1"
+						android:text="23.68"
+						android:textSize="26sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/LinearLayout01"
+					android:layout_width="fill_parent"
+					android:layout_height="36dp"
+					android:layout_margin="5dp"
+					android:orientation="horizontal" >
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="1"
+						android:text="Resultat"
+						android:textSize="26sp" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="1"
+						android:text="   -   1.25   €"
+						android:textSize="26sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/widget351"
+					android:layout_width="fill_parent"
+					android:layout_height="36dp"
+					android:layout_margin="5dp"
+					android:orientation="horizontal" >
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="1"
+						android:text="  Prévision        /  Résultat"
+						android:textSize="26sp" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="1"
+						android:text="   -   2.54   €"
+						android:textSize="26sp" />
+				</LinearLayout>
+
+				<LinearLayout
+					android:id="@+id/widget350"
+					android:layout_width="fill_parent"
+					android:layout_height="36dp"
+					android:layout_margin="5dp"
+					android:orientation="horizontal" >
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="left|center_vertical"
+						android:layout_weight="1"
+						android:text="Bons prix"
+						android:textSize="26sp" />
+
+					<TextView
+						style="@style/btt_test"
+						android:layout_width="match_parent"
+						android:layout_height="36dp"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="1"
+						android:text="5"
+						android:textSize="26sp" />
+				</LinearLayout>
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="8"
+		android:orientation="horizontal" >
+
+		<Button
+			android:id="@+id/btn_liste_state_backward"
+			style="@style/btt_metal_lightgray"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:background="@drawable/metal_brosse_lightgray"
+			android:drawableLeft="@drawable/backward"
+			android:paddingLeft="15dp"
+			android:text="Retour" />
+
+		<Button
+			android:id="@+id/btn_liste_review"
+			style="@style/btt_metal_lightgray"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_weight="2"
+			android:background="@drawable/metal_brosse_lightgray"
+			android:text="Review" />
+	</LinearLayout>
+
+</LinearLayout>

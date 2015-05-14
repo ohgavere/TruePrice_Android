@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="dim_textsize_global">40sp</dimen>
+    <dimen name="dim_textsize_global_bigger">44sp</dimen>
+    <dimen name="dim_textsize_global_smaller">36sp</dimen>
+
+    <dimen name="dim_imgsize_price_calculator">80dp</dimen>
+
+
+</resources>

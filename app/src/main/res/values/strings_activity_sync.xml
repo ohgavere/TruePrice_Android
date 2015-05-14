@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_sync_target">
+        <item>True |$| Price</item>
+        <item>Email</item>
+        <item>Sms</item>
+        <item>Friends</item>
+    </string-array>
+		
+</resources>

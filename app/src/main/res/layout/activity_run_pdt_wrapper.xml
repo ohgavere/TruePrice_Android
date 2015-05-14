@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="0dp"
+	android:background="@drawable/wood_panel"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+
+    <LinearLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="75dp"
+    	android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        >
+
+        <requestFocus />
+
+            <Button
+                android:id="@+id/btn_gallery_previous"
+                style="@style/btt_metal_lightgray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:background="@drawable/backward"
+                android:clickable="true"
+                android:layout_weight="0" />
+
+
+    	<Gallery
+    		android:id="@+id/gallery_pdt"
+    		android:layout_width="wrap_content"
+    		android:layout_height="match_parent"
+    		android:animationDuration="250"
+    		android:background="@android:color/transparent"
+    		android:gravity="center_vertical|center_horizontal"
+    		android:padding="2dp"
+    		android:scrollbarAlwaysDrawVerticalTrack="false"
+    		android:scrollbarStyle="insideOverlay"
+    		android:scrollbars="horizontal"
+    		android:spacing="4dp"
+    		android:unselectedAlpha="0.75"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_gallery_next"
+            style="@style/btt_metal_lightgray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="0"
+            android:background="@drawable/forward"
+            android:clickable="true"
+            />
+
+    </LinearLayout>
+
+    
+	<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/pager"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		
+	    <android.support.v4.view.PagerTitleStrip
+	    	android:id="@+id/pager_title_strip"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:layout_gravity="top"
+	    	android:background="#77b5b5"
+	    	android:paddingBottom="4dp"
+	    	android:paddingTop="4dp"
+	    	android:textColor="#fff"
+	    	android:visibility="gone" />
+		
+	</android.support.v4.view.ViewPager>    
+		
+</LinearLayout>

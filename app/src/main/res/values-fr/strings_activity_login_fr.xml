@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mot de passe</string>
+    <string name="action_sign_in">Connexion ou Inscription</string>
+    <string name="action_sign_in_short">Connexion</string>
+    <string name="action_sign_off">Deconnexion</string>
+    <string name="error_invalid_email">Mauvais adresse email</string>
+    <string name="error_invalid_password">Mauvais mot de passe</string>
+    <string name="error_login_failure">Echec d\'authentification : </string>
+    <string name="error_incorrect_login">Pseudo erroné</string>    
+    <string name="error_incorrect_password">Mauvais mot de passe</string>
+    <string name="error_field_required">Champ obligatoire</string>
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/btt_test"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="0dp"
+	android:background="@drawable/wood_panel"
+	android:orientation="vertical"
+	tools:context="${relativePackage}.${activityClass}" >
+
+<!--        android:layout_weight="3"        -->
+    
+    <ScrollView
+    	android:id="@+id/scrollView1"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_gravity="top"
+    	android:layout_weight="1" >
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_vertical|center_horizontal"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_weight="1"
+			android:text="Nb produits"
+			android:textSize="26sp" />
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="18"
+			android:textSize="26sp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_gravity="left|center_vertical"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_weight="1"
+			android:text="Total TTC"
+			android:textSize="26sp" />
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="23.68"
+			android:textSize="26sp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/widget350"
+		android:layout_width="fill_parent"
+		android:layout_height="36dp"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_weight="1"
+			android:text="Bons prix"
+			android:textSize="26sp" />
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="5"
+			android:textSize="26sp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/widget351"
+		android:layout_width="fill_parent"
+		android:layout_height="36dp"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_weight="1"
+			android:text="  Prévision        /  Résultat"
+			android:textSize="26sp" />
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="   -   2.54   €"
+			android:textSize="26sp" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent"
+		android:layout_height="36dp"
+		android:layout_margin="5dp"
+		android:orientation="horizontal" >
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="left|center_vertical"
+			android:layout_weight="1"
+			android:text="Resultat"
+			android:textSize="26sp" />
+
+		<TextView
+			style="@style/btt_test"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_gravity="center_vertical"
+			android:layout_weight="1"
+			android:text="   -   1.25   €"
+			android:textSize="26sp" />
+	</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+
+<LinearLayout
+	android:layout_width="match_parent"
+	android:layout_height="40dp"
+	android:layout_margin="0dp"
+	android:orientation="horizontal" >
+
+<Button
+	android:id="@+id/btn_liste_stop_summary"
+	style="@style/btt_metal_lightgray"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:background="@drawable/metal_brosse_lightgray"
+	android:text="Résumé"
+	android:textSize="24dp" />
+
+<Button
+	android:id="@+id/btn_liste_stop_finalize"
+	style="@style/btt_metal_lightgray"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:background="@drawable/metal_brosse_lightgray"
+	android:text="Cloturer"
+	android:textSize="24dp" />
+
+</LinearLayout>
+
+<LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="40dp"
+	android:layout_margin="0dp"
+	android:orientation="horizontal" >
+
+<Button
+	android:id="@+id/btn_liste_stop_review"
+	style="@style/btt_metal_lightgray"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:background="@drawable/metal_brosse_lightgray"
+	android:text="Réviser"
+	android:textSize="24dp" />
+
+<Button
+	android:id="@+id/btn_liste_stop_sync"
+	style="@style/btt_metal_lightgray"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_weight="1"
+	android:background="@drawable/metal_brosse_lightgray"
+	android:text="Synchroniser"
+	android:textSize="19sp" />
+
+</LinearLayout>
+</LinearLayout>

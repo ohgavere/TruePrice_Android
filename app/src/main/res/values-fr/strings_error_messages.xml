@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="error_function_not_enabled">Cette fonction n\'est pas encore disponible. Veuillez revenir plus tard.</string>
+    
+	<string name="error_launcher_not_signed_in">Veuillez d\'abord vous connecter</string>
+	<string name="error_launcher_no_internet">Accès Internet impossible</string>	
+    
+</resources>
