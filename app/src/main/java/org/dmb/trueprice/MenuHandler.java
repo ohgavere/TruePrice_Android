@@ -34,11 +34,11 @@ public class MenuHandler extends Activity  {
         
         Log.i(this.getClass().getSimpleName(), "onOptionsItemSelected : ID : " + id);
         
-        String bttClickedLabel = " ! not defined !" ;
+        String bttClickedLabel = "" ;
         
         switch (id) {
-		case R.id.btn_sync_synchronize:
-			bttClickedLabel = this.getApplicationContext().getResources().getString(R.id.btn_sync_synchronize) ;
+/*		case R.id.action_about:
+			bttClickedLabel = this.getApplicationContext().getResources().getString(R.string.abc_action_bar_home_description) ;
 //			break;
 			
 		case R.id.action_settings:
@@ -48,13 +48,16 @@ public class MenuHandler extends Activity  {
 		case R.id.action_link_webapp:
 			bttClickedLabel = this.getApplicationContext().getResources().getString(R.id.action_link_webapp) ;
 //			break;
-			
+*/
 		default:
-			
-			Toast.makeText(this, "You clicked : " + bttClickedLabel, Toast.LENGTH_SHORT).show();
-			
-			break;
-		}
+
+            Toast.makeText(this, "You clicked : " + item.getTitle(), Toast.LENGTH_SHORT).show();
+
+
+            break;
+        }
+
+        //Toast.makeText(this, "You clicked : " + bttClickedLabel, Toast.LENGTH_SHORT).show();
         return super.onOptionsItemSelected(item);
     }
 

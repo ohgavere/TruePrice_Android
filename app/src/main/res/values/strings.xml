@@ -11,7 +11,7 @@
     <string name="button_label_login" translatable="false">Login</string>
     <string name="link_label_webapp" translatable="false">T$P.net</string>
     <string name="link_webapp" translatable="false">www.trueprice.net</string>
-    <string name="action_about">About</string>
+    <string name="action_about">About TruePrice</string>
     <string name="title_activity_menu_handler" translatable="false">MenuHandler</string>
     <string name="title_activity_run_liste">Run Liste</string>
     
